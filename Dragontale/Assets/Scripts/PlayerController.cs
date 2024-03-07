@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         if(inputVector != Vector2.zero){
             Vector3 forceVector = new Vector3(inputVector.x,0,inputVector.y);
-            QueuedForces.Add(new Tuple<Vector3,ForceMode>(forceVector*acceleration, ForceMode.Acceleration));
+            QueuedForces.Add(new Tuple<Vector3,ForceMode>(forceVector*acceleration, ForceMode.Force));
 
             //face towards move direction
             var lookPos = transform.position + new Vector3(inputVector.x, 0, inputVector.y) - transform.position;

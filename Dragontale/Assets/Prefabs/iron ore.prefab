@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cd76ec93f08cd6e4a83f4c97ee2fc633, type: 2}
+  - {fileID: 2100000, guid: 77485399c11b9c34c8bd7ae2d31d6a7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -126,6 +126,7 @@ MonoBehaviour:
   possiblePlacementTiles:
   - {fileID: 6151773384994753768, guid: 0303b5678a217ee498af409ac781abcc, type: 3}
   performedAction: 0
+  actionTime: 5
   reactsToActions: 01000000
   transformations:
   - {fileID: 6151773384994753768, guid: 25b4d99a4b01ccc42bbc81dba91328f7, type: 3}
