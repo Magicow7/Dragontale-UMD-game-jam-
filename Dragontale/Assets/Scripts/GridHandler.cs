@@ -25,6 +25,8 @@ public class GridHandler : MonoBehaviour
     public GameObject furnace;
     public GameObject ironOre;
 
+    public GameObject conveyer;
+
     //private vars
     private Dictionary <BaseTile,int> tileWeights = new Dictionary <BaseTile,int>();
     // Start is called before the first frame update
@@ -131,6 +133,12 @@ public class GridHandler : MonoBehaviour
             BaseTile choosenTile = getRandomActiveTile(true);
             TopTile newFurnace = new TopTile(choosenTile, furnace);
             choosenTile.topTiles.Add(newFurnace);
+        }
+
+        for(int i = 0; i < 3; i++){
+            BaseTile choosenTile = getRandomActiveTile(true);
+            TopTile newConveyer = new TopTile(choosenTile, conveyer);
+            choosenTile.topTiles.Add(newConveyer);
         }
 
         

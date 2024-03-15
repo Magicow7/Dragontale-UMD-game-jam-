@@ -13,4 +13,11 @@ public class BaseTile
         this.position = position;
         topTiles = new List<TopTile>();
     }
+
+    public TopTile getTopTile(int extra = 0){
+        if(topTiles.Count == 0){
+            return null;
+        }
+        return topTiles[topTiles.Count - (1+extra)];
+    }
 }

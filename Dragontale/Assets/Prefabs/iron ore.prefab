@@ -125,6 +125,7 @@ MonoBehaviour:
   bottomTile: 0
   possiblePlacementTiles:
   - {fileID: 6151773384994753768, guid: 0303b5678a217ee498af409ac781abcc, type: 3}
+  - {fileID: 6151773384994753768, guid: 65ec5ace6d7199547997ceb1ae436571, type: 3}
   performedAction: 0
   actionTime: 5
   reactsToActions: 01000000

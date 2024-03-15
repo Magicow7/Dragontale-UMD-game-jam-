@@ -18,7 +18,7 @@ public abstract class TileDependent : MonoBehaviour
 
     public TileActions performedAction;
     public float actionTime = 5;
-    private int actionsPerformed = 0;
+    public int actionsPerformed = 0;
 
 
 
@@ -28,7 +28,13 @@ public abstract class TileDependent : MonoBehaviour
 
     public Dictionary<TileActions, GameObject> transformationDict;
 
+    [Header("DO NOT CHANGE IN INSPECTOR")]
+    public bool purelyVisual;
+
     public void Start(){
+        if(purelyVisual){
+            return;
+        }
         transformationDict = new Dictionary<TileActions, GameObject>();
         if(reactsToActions.Count != transformations.Count){
             Debug.Log("Not all actions corrospond to a transformation");
@@ -42,7 +48,8 @@ public abstract class TileDependent : MonoBehaviour
 
     //interact is unused for now
     public virtual void interact(){
-        
+        //rotates
+        transform.Rotate(new Vector3(0,90,0));
         Debug.Log("no interaction set");
     }
 

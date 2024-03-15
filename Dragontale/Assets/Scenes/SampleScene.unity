@@ -506,6 +506,7 @@ MonoBehaviour:
   wall: {fileID: 3315601038656891873, guid: 523e7e4b11d64e344b75adff2e96abd7, type: 3}
   furnace: {fileID: 6151773384994753768, guid: 0303b5678a217ee498af409ac781abcc, type: 3}
   ironOre: {fileID: 6151773384994753768, guid: d4699361ddb564f48af5b7d997213a3a, type: 3}
+  conveyer: {fileID: 6151773384994753768, guid: 65ec5ace6d7199547997ceb1ae436571, type: 3}
 --- !u!4 &680961544
 Transform:
   m_ObjectHideFlags: 0

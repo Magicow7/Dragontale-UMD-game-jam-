@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8153349998705275296}
   - component: {fileID: 6555850817017513691}
   - component: {fileID: 2994344434884196230}
-  - component: {fileID: 8112196200288614778}
+  - component: {fileID: 4345091914436192668}
   m_Layer: 0
-  m_Name: iron bar
+  m_Name: Conveyer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +30,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.33, y: 1.35, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6f41119cc6ea85742a8f5a36bc4cf424, type: 2}
+  - {fileID: 2100000, guid: 6f2d85f6cd97ca547b849701830836df, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -106,7 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8112196200288614778
+--- !u!114 &4345091914436192668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,19 +115,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 6151773384994753768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f96aabf28b9e1b4fb70a41a733e6211, type: 3}
+  m_Script: {fileID: 11500000, guid: 6f12a53e6108a2d43be1227bdf9ff01b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionOffset: {x: 0, y: 0.25, z: 0}
-  holderPosition: {x: 0, y: 0, z: 0}
+  positionOffset: {x: 0, y: 0.5, z: 0}
+  holderPosition: {x: 0, y: 0.5, z: 0}
   interactable: 1
   moveable: 1
-  bottomTile: 0
-  possiblePlacementTiles:
-  - {fileID: 6151773384994753768, guid: 0303b5678a217ee498af409ac781abcc, type: 3}
-  - {fileID: 6151773384994753768, guid: 65ec5ace6d7199547997ceb1ae436571, type: 3}
+  bottomTile: 1
+  possiblePlacementTiles: []
   performedAction: 0
-  actionTime: 5
+  actionTime: 1
   actionsPerformed: 0
   reactsToActions: 
   transformations: []
+  conveyerTime: 1

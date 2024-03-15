@@ -89,6 +89,14 @@ public class PlayerController : MonoBehaviour
             }
             
         }
+
+        //get input for interacting with tiles, rotation for now.
+        if(Input.GetKeyDown(KeyCode.E)){
+            TopTile topTile = selectedTile.topTiles[selectedTile.topTiles.Count-1];
+            if(topTile.dependent.interactable){
+                topTile.dependent.interact();
+            }
+        }
         
     }
 
